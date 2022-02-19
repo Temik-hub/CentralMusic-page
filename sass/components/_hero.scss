@@ -1,0 +1,104 @@
+.hero {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 100px;
+  background-image: url(/images/background-hero.jpg);
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(70, 69, 69);
+  color: #fff;
+  @media (max-width: 1279px) {
+    padding: 100px 64px 0 64px;
+  }
+  @media (max-width: 767px) {
+    padding: 100px 24px 0 24px;
+  }
+}
+.hero__container {
+  position: relative;
+  @include centering;
+  padding-top: 178px;
+  padding-bottom: 144px;
+  align-items: center;
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
+}
+.hero__title {
+  max-width: 579px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 178px;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 67px;
+  letter-spacing: 0.02em;
+  @media (max-width: 767px) {
+    font-size: 40px;
+    line-height: 120%;
+    text-align: center;
+    max-width: 337px;
+  }
+}
+.hero__advertisement {
+  width: 100%;
+  position: absolute;
+  bottom: -19.5%;
+  align-self: center;
+  background-image: linear-gradient(rgba(255, 0, 0, 0.5), rgba(255, 0, 0, 0.5)), url(/images/banner.png);
+  background-position: center;
+  background-repeat: repeat, no-repeat;
+  background-size: auto, cover;
+  border-radius: 10px;
+  @media (max-width: 767px) {
+    bottom: -15%;
+  }
+}
+.hero__advertisement-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  max-width: 616px;
+  margin: 0 auto;
+  text-align: center;
+  @media (max-width: 767px) {
+    
+  }
+}
+.hero__advertisement-title {
+  margin: 0;
+  padding-bottom: 4px;
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 120%;
+  text-transform: uppercase;
+  @media (max-width: 767px) {
+    font-size: 20px;
+  }
+}
+.hero__advertisement-text {
+  margin: 0;
+  padding-bottom: 16px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 149%;
+  @media (max-width: 767px) {
+    font-size: 10px;
+    max-width: 226px;
+  }
+}
+.hero__advertisement__link {
+  padding: 8px 16px;
+  background-color: $orange-color;
+  border-radius: 32px;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 130%;
+  text-transform: uppercase;
+}
