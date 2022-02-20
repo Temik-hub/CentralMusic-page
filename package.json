@@ -1,7 +1,7 @@
 {
   "name": "portfolio-page",
   "private": true,
-  "description": "Личный проект «{{portfolio-page}}»",
+  "description": "Личный проект «{{CentralMusicnpm-page}}»",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "10.4.0",
