@@ -79,19 +79,20 @@ img {
 @media (max-width: 1279px) {
   .header__navigation {
     visibility: hidden;
-    margin-right: 0;
     justify-content: center;
     position: absolute;
     top: 55px;
     right: 100px;
     background-color: rgba(255, 255, 255, 0.2);
     opacity: 0;
-    transition: 0.3s ease-in-out;
+    transition-property: opacity;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
   }
   .header__navigation--open {
     visibility: visible;
+    z-index: 1;
     opacity: 1;
-    transition: 0.2s ease-in-out;
   }
 }
 @media (max-width: 1279px) and (max-width: 767px) {
@@ -702,7 +703,7 @@ img {
 }
 
 .footer__link {
-  padding: 10px;
+  padding: 5px;
   text-decoration: none;
   color: #fff;
   font-weight: 400;
